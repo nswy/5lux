@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>5lux</title>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        #brand {
+            width: 1210px;
+            height: 510px;
+            background: pink;
+        }
+        #box{
+            width: 1210px;
+            height: 329px;
+            border: solid 1px blue;
+        }
+        #box .box1{
+            float: left;
+            width: 230px;
+            height: 329px;
+            background: pink;
+            margin-left: 10px;
+            position: relative;
+        }
+        #brand .active {
+            width: 160px;
+            height: 40px;
+            background-color: #fff;
+            position: absolute;
+            bottom: 3px;
+            left:35px;
+            text-align: center;
+            overflow: hidden;
+        }
+        #box .active img {
+            width: 80px;
+            height: 30px;
+        }
+        .hots_con {
+            width: 1210px;
+            height: 170px;
+            background-color: aqua;
+
+        }
+        #brand .hots_con div{
+            width: 162px;
+            height: 80px;
+            border: solid 3px #cccccc;
+            display: inline-block;
+            text-align: center;
+            line-height: 80px;
+            position:relative;
+        }
+        #brand .hots_con img{
+            width: 100px;
+            height: 50px;
+            position: absolute;
+            top: 10px;
+            left:20px;
+        }
+        #brand .hots_con div .top {
+            height: 3px;
+            width: 0px;
+            background-color: black;
+            position: absolute;
+            border:none;
+            top:-3px;
+            left:-3px;
+        }
+        #brand .hots_con div .left{
+            width: 3px;
+            height: 0px;
+            background-color: black;
+            position: absolute;
+            top:-3px;
+            left:-3px;
+            border:none;
+        }
+        #brand .hots_con div .right{
+            width: 3px;
+            height: 0px;
+            background-color: black;
+            position: absolute;
+            right:-3px;
+            bottom:-3px;
+            border:none;
+        }
+        #brand .hots_con div .bottom{
+            width: 0px;
+            height: 3px;
+            background-color: black;
+            position: absolute;
+            right:-3px;
+            bottom:-3px;
+            border:none;
+        }
+
+    </style>
+</head>
+<body>
+<div id="brand">
+    <img src="img/brand_title.png"/>
+	<div id="box">
+	    <div class="box1">
+	        <img src="img/brand1.jpg" alt="meinv" />
+	        <div class="active">
+	            <img src="img/bg.png"/>
+	            <p>bangeli</p>
+	        </div>
+	    </div>
+	    <div class="box1">
+	        <img src="img/brand2.jpg" alt="meinv" />
+	        <div class="active">
+	            <img src="img/bg.png"/>
+	            <p>bangeli</p>
+	        </div>
+	    </div>
+	    <div class="box1">
+	        <img src="img/brand3.jpg" alt="meinv" />
+	        <div class="active">
+	            <img src="img/bg.png"/>
+	            <p>bangeli</p>
+	        </div>
+	    </div>
+	    <div class="box1">
+	        <img src="img/brand4.jpg" alt="meinv" />
+	        <div class="active">
+	            <img src="img/bg.png"/>
+	            <p>bangeli</p>
+	        </div>
+	    </div>
+	    <div class="box1">
+	        <img src="img/brand1.jpg" alt="meinv" />
+	        <div class="active">
+	            <img src="img/bg.png"/>
+	            <p>bangeli</p>
+	        </div>
+	    </div>
+	
+	</div>
+    <img src="img/hotstore_t.jpg" />
+    <div class="hots_con">
+        <div>
+            <img src="img/hots_con.png " />
+            <div class="top"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="bottom"></div>
+        </div>
+        <div>
+            <img src="img/hots_con.png " />
+            <div class="top"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="bottom"></div>
+        </div>
+        <div>
+            <img src="img/hots_con.png " />
+            <div class="top"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="bottom"></div>
+        </div>
+        <div>
+            <img src="img/hots_con.png " />
+            <div class="top"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="bottom"></div>
+        </div>
+        <div>
+            <img src="img/hots_con.png " />
+            <div class="top"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="bottom"></div>
+        </div>
+        <div>
+            <img src="img/hots_con.png " />
+            <div class="top"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="bottom"></div>
+        </div>
+        <div>
+            <img src="img/hots_con.png " />
+            <div class="top"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="bottom"></div>
+        </div>
+        <div>
+            <img src="img/hots_con.png " />
+            <div class="top"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="bottom"></div>
+        </div>
+        <div>
+            <img src="img/hots_con.png " />
+            <div class="top"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="bottom"></div>
+        </div>
+        <div>
+            <img src="img/hots_con.png " />
+            <div class="top"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="bottom"></div>
+        </div>
+        <div>
+            <img src="img/hots_con.png " />
+            <div class="top"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="bottom"></div>
+        </div>
+        <div>
+            <img src="img/hots_con.png " />
+            <div class="top"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="bottom"></div>
+        </div>
+        <div>
+            <img src="img/hots_con.png " />
+            <div class="top"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="bottom"></div>
+        </div>
+        <div>
+            <img src="img/hots_con.png " />
+            <div class="top"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="bottom"></div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
+<script>
+    $(function() {
+        //shop 鼠标移上 改变高度
+        (function changeTop() {
+            $("#box div").mouseenter(function() {
+                $(this).find("div").animate({"height": "150px"},300);
+            });
+
+            $("#box div").mouseleave(function() {
+                $(this).find("div").animate({"height": "40px"},300);
+            });
+        })();
+
+        // 热门旗舰店 鼠标事件 改变边框
+
+        (function (){
+            $("#brand .hots_con div").mouseenter(function () {
+               //console.log($(this).find("div[class='top']"));
+                $(this).find("div[class='top']").animate({"width":"168"});
+                $(this).find("div[class='left']").animate({"height":"86"});
+                $(this).find("div[class='right']").animate({"height":"86"});
+                $(this).find("div[class='bottom']").animate({"width":"168"});
+            });
+
+            $("#brand .hots_con div").mouseleave(function () {
+                //console.log($(this).find("div[class='top']"));
+                $(this).find("div[class='top']").animate({"width":"0"});
+                $(this).find("div[class='left']").animate({"height":"0"});
+                $(this).find("div[class='right']").animate({"height":"0"});
+                $(this).find("div[class='bottom']").animate({"width":"0"});
+            });
+        })();
+
+    })
+
+</script>
