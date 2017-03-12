@@ -47,10 +47,12 @@ img {
   position: relative; }
 
 #banner {
-  width: 1440px;
+  width: 1210px;
   height: 520px;
   background-color: pink;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden; }
 
 #brand {
   width: 1210px;
@@ -85,20 +87,6 @@ img {
   width: 1210px;
   height: 120px;
   margin: 0 auto; }
-
-#serve {
-  width: 1190px;
-  height: 286px;
-  margin: 0 auto;
-  padding-left: 20px;
-  border-top: solid 1px #cccccc; }
-
-#foot {
-  width: 1210px;
-  height: 200px;
-  margin: 0 auto;
-  background-color: #1f1513;
-  position: relative; }
 
 #head .head_left {
   float: left;
@@ -184,6 +172,44 @@ img {
 #head .app div img {
   width: 100px;
   height: 100px; }
+
+#head .head_right .myBag ul a {
+  color: brown; }
+
+#head .head_right .myBag ul a:hover {
+  color: brown; }
+
+#banner .autoPlay {
+  width: 9999px;
+  height: 520px;
+  position: absolute;
+  left: 0px;
+  top: 0px; }
+
+#banner .autoPlay li {
+  float: left;
+  width: 1210px;
+  height: 520px; }
+
+#banner .dot {
+  height: 20px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -80px;
+  border: solid 1px #4169E1;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding-right: 10px;
+  line-height: 20px; }
+
+#banner .dot li {
+  float: left;
+  width: 15px;
+  height: 15px;
+  margin: 2px 0 0 10px;
+  border-radius: 50%;
+  background: #8A2BE2; }
 
 #search .img2 {
   position: absolute;
@@ -275,7 +301,8 @@ img {
   position: absolute;
   left: 0px;
   top: 37px;
-  display: none; }
+  display: none;
+  z-index: 99; }
 
 #nav .nav_sub li {
   color: #000000;
@@ -424,8 +451,7 @@ img {
 #items .page li {
   float: left;
   width: 1210px;
-  height: 518px;
-  background-color: red; }
+  height: 518px; }
 
 #items .items_content .items_list {
   width: 1233px;
@@ -433,8 +459,9 @@ img {
   background: #6495ED;
   margin-left: -23px; }
 
-#items .items_content .items_list .click {
-  background: #000000; }
+#items .items_content .items_list .enter {
+  background: #000000;
+  color: #cccccc; }
 
 #items .items_content .items_list li {
   width: 388px;
@@ -621,8 +648,38 @@ img {
   float: left;
   text-align: center;
   line-height: 50px;
-  background: #999999;
-  margin-left: 8px; }
+  margin-left: 8px;
+  overflow: hidden;
+  position: relative; }
+
+#shop .shop_list li div {
+  width: 234px;
+  height: 100px;
+  background: #000000;
+  position: absolute;
+  left: 0px;
+  top: 0px; }
+
+#shop .shop_list li div p:nth-child(1) {
+  display: block;
+  width: 234px;
+  height: 50px;
+  background: #999999; }
+
+#shop .shop_list li div p:nth-child(2) {
+  display: block;
+  width: 234px;
+  height: 50px;
+  background: #000000;
+  color: #ffffff;
+  text-align: center; }
+
+#shop .shop_list li div p:nth-child(2) {
+  width: 220px;
+  height: 36px;
+  border: solid 2px #ffffff;
+  margin: 5px;
+  line-height: 36px; }
 
 #shop .bags_con {
   position: relative;
@@ -1321,6 +1378,25 @@ img {
 #query .honour div:nth-child(2) p {
   margin-top: 10px; }
 
+#serve {
+  width: 100%;
+  height: 286px;
+  position: relative;
+  overflow: hidden; }
+
+#serve #bg_img {
+  position: absolute;
+  top: -150px;
+  left: auto; }
+
+#serve .serve_box {
+  width: 1190px;
+  height: 286px;
+  margin: 0 auto;
+  padding-left: 20px;
+  border-top: solid 1px #cccccc;
+  position: relative; }
+
 #serve dl {
   width: 180px;
   float: left;
@@ -1349,6 +1425,17 @@ img {
 
 #serve dl a:hover {
   text-decoration: underline; }
+
+#foot {
+  width: 100%;
+  height: 200px;
+  background-color: #1f1513; }
+
+#foot .foot_box {
+  width: 1210px;
+  height: 200px;
+  margin: 0 auto;
+  position: relative; }
 
 #foot ul:nth-child(1) {
   position: absolute;
@@ -1386,10 +1473,9 @@ img {
   color: #ffffff;
   position: absolute;
   top: 95px;
-  left: 200px;
-  border: solid 1px red; }
+  left: 200px; }
 
-#foot div {
+#foot .foot_com {
   position: absolute;
   left: 440px;
   bottom: 24px; }

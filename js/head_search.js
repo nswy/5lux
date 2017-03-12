@@ -17,7 +17,7 @@ $(function () {
 		});
 		//鼠标点击跳转 首页
 		$("#head .head_left li:first").find("a").click(function () {
-			location.href = "sub_index.html"; //跳转的地址
+			location.href = "index.html"; //跳转的地址
 		});
 		
 	})();
