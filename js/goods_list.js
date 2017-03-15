@@ -40,14 +40,14 @@ $(function () {
 
 
 //获取后台信息库的 商品信息
-	$.get("php/getGoodsList.php",{"goodsId":},function (num) {
+	$.get("php/getGoodsList.php",function (num) {
 		//开始创建商品列表
 //		console.log(JSON.parse(JSON.stringify(data)));
 
 		var data = eval(num);
 		console.log(data);
 		
-			console.log(data.length);
+//			console.log(data.length);
 		for (let key in data) {
 			let Li = $("<li></li>");
 	//		Li.css({"background":"red"})
@@ -106,9 +106,22 @@ $(function () {
 //			});
 		}
 		
+		
 		//商品列表添加完成
 	});
-	
+		console.log($("#goods_list li"));
+		$("#goods_list").delegate("li", "click", function(){  
+			let index = $(this).index();
+			console.log(index);
+			$.get("php/getGoodsList.php",function (num){
+				
+				var data = eval(num);
+				data[index].goodsId;
+				saveCookie("goodsId",data[index].goodsId,8);
+				location.href="goods_message.html"
+			});
+			
+		});
 	
 	
 	

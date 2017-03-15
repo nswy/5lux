@@ -12,7 +12,7 @@ $(function () {
 			//显示放大镜
 			function () {
 				
-				console.log($("#gd_pic .dim"));
+//				console.log($("#gd_pic .dim"));
 				$("#gd_pic .dim").css({"display":"block"});
 				$("#gd_pic .mask").css({"display":"block"});
 				$("#gd_pic .wrap").css({"display":"block"});
@@ -50,8 +50,8 @@ $(function () {
 				let wrapW = $(".wrap").outerWidth();
 				let wrapH = $(".wrap").outerHeight();
 				
-				console.log(wrapW);
-				console.log(wrapH);
+//				console.log(wrapW);
+//				console.log(wrapH);
 //				console.log(picL+"-"+picT);
 //				console.log(e.pageX+"-"+e.pageY);
 				let dimT,dimL;
@@ -115,6 +115,33 @@ $(function () {
 		
 	})();
 	
+	
+	//根据在商品列表点击的商品  加载商品详细的信息 
+
+	(function () {
+		
+		let  gdId = getCookie("goodsId");
+		console.log(gdId);
+		$.get("php/getGoodsInfo.php",{"goodsId":gdId}, function (data) {
+			let num = eval('('+data+')')
+			console.log(num);
+			console.log(num.goodsImg);
+			$("#title_img").attr({src:num.goodsImg});
+			$("#wrap_img").attr({src:num.goodsImg});
+			$("#gd_img_list li:eq(0)").find("img").attr({src:num.beiyong3});
+			$("#gd_img_list li:eq(1)").find("img").attr({src:num.beiyong4});
+			$(".gd_text span:eq(1)").html(num.goodsDesc);
+			$(".gd_text span:eq(2)").html("货号："+num.goodsId);
+			$(".gd_price span").html("￥"+num.goodsPrice);
+//			$(".gd_price span").html("￥"+num.goodsPrice);
+			$(".home_price span").html("国内参考价：￥"+num.goodsPrice*2.4);
+			$(".gd_size .gd_dd a").html(num.beiyong1);
+			$(".gd_color .gd_dd a").html(num.beiyong2);
+			$(".gd_brand a").html(num.goodsName);
+			
+			
+		});
+	})();
 	
 	
 	

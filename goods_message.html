@@ -9,6 +9,7 @@
 		<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <script src="js/jquery-1.8.3.min.js"></script>
         <script src="js/nav.js"></script>	         
+        <script src="js/cookie.js"></script>
         <script src="js/head_search.js"></script>	
         <script src="js/goods_message.js"></script>	
         
@@ -19,7 +20,7 @@
 		<header id="head">
 			<ul class="head_left">
 				<li>
-					<a href="###"><i class="fa fa-home"></i> 5Lux首页</a>
+					<a href="index.html"><i class="fa fa-home"></i> 5Lux首页</a>
 					<span></span>
 				</li>
 				<li>
@@ -40,8 +41,8 @@
 					<span></span>
 					<div>
 						<a href="###">我的订单</a>
-							<a href="###">我的收藏</a>
-							<a href="###">已购商品</a>
+						<a href="###">我的收藏</a>
+						<a href="###">已购商品</a>
 						<a href="###">我的礼劵</a>
 						<a href="###">我的积分</a>
 						
@@ -147,20 +148,12 @@
 							
 								<ul id="gd_img_list"> 
 									<li>
-										<img src="img/shoe_2.JPG" />
+										<img src="" />
 									</li> 
 									<li>
-										<img src="img/shoe_3.JPG" />
+										<img src="" />
 									</li> 
-									<li>
-										<img src="img/shoe_4.JPG" />
-									</li>
-									<li>
-										<img src="img/shoe_4.JPG" />
-									</li>
-									<li>
-										<img src="img/shoe_4.JPG" />
-									</li>
+									
 								</ul>
 								
 							
@@ -198,9 +191,9 @@
 							<div class="gd_dd">
 								<a href="###">36</a>
 							</div>
-							<div class="gd_dd">
+							<!--<div class="gd_dd">
 								<a href="###">40</a>
-							</div>
+							</div>-->
 						</li>
 						<li class="gd_color">
 							<div class="gd_dt">
@@ -216,7 +209,7 @@
 							</div>
 							<div class="gd_dd">
 								<a href="###" id="reduce_num">-</a>
-								<input type="text" id="gd_num" />
+								<input type="text" id="gd_num" value="1" />
 								<a href="###" id="add_num">+</a>
 							</div>
 						</li>
