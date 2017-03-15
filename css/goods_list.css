@@ -29,7 +29,7 @@ img {
 #nav {width: 1210px;height: 38px;background-color: #1b1c1b;margin: 0 auto;
   position: relative; }
   
-#main {width: 100%; min-height:1000px; background:#e6e6e6; }
+#main {width: 100%; min-height:800px; background:#e6e6e6; }
 #main:after{content:"";height:0px; display:block; clear:both;}
 
 #query { width: 1210px; height: 120px;margin: 0 auto; }
@@ -41,7 +41,7 @@ img {
 
 
 
-#main .main_cot {width: 1210px; min-height:1000px; margin: 0 auto;  padding-top: 40px;}
+#main .main_cot {width: 1210px; min-height:600px; margin: 0 auto;  padding-top: 40px;}
 
 #main .space {width: 1000px; height: 30px;box-shadow: 0 2px 10px #000; margin: 30px auto; }
 
@@ -59,8 +59,8 @@ img {
 #main .option li:hover {color:#c69c6d;}
 
 /*//单个商品的所在的盒子*/
-#main .list {width:1024px; min-height: 1000px; margin: 0 auto;}
-
+#main .list {width:1024px; min-height: 500px; margin: 0 auto;}
+/*#main .list:after{content:"";height: 0px; display:block;clear:both;}*/
 #main .list ul li {width: 226px; height: 466px;padding: 0px 15px;float: left; margin-bottom: 26px;}
 /*#amin .list .goods_wrap{width: 226px; height: 466px;background-color:#ffffff;}*/
 #main .list ul li :after {content: "";display: block;height: 0;clear: both;}
@@ -69,8 +69,8 @@ img {
 #main .list .goods_box{ width:226px; height: 466px;background-color:#ffffff;}
 
 
-#main .goods_img {width: 226px;}
-#main .goods_img img{width: 226px; }
+#main .goods_img {width: 226px; height: 292px;}
+#main .goods_img img{width: 226px; height:292px;}
 #main .goods_coll{width: 226px; height: 48px;line-height: 48px;position:relative;}
 #main .goods_coll a{position: absolute;right:40px; top: 15px; color:#ed1c24;}
 #main .goods_coll span{display:block;height: 48px;line-height: 48px;float: right; margin-right: 10px; }
@@ -78,7 +78,7 @@ img {
 #main .goods_message{width:226px; height: 78px;padding: 5px 0 20px 0 ;}
 #main .goods_message p{height: 28px; white-space:nowrap;overflow: hidden;padding: 0 5px;}
 #main .goods_message .goods_name{height: 26px; font-weight: bold;}
-#main .goods_message .goods_name a{color: #000000;}
+#main .goods_message .goods_name a{color: #000000;cursor: pointer;}
 #main .goods_message .goods_title{height: 26px; font-size: 10px;}
 #main .goods_message .goods_price{height: 26px;font-weight: bold; }
 #main .goods_message .goods_price span {height: 26px;color: #ce8702; font-style:oblique; margin-left: 10px;}

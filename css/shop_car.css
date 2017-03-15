@@ -468,8 +468,7 @@ input {
 
 #shopping {
   width: 900px;
-  min-height: 500px;
-  background: pink;
+  min-height: 200px;
   margin: 0 auto;
   padding-top: 30px; }
   #shopping .title {
@@ -485,8 +484,9 @@ input {
     width: 900px;
     border: solid 1px blue;
     border-collapse: collapse; }
+    #shopping table tr {
+      border: solid 1px #666666; }
     #shopping table th {
-      border: solid 1px red;
       font-size: 10px;
       color: #000000; }
     #shopping table .car_title {
@@ -495,7 +495,7 @@ input {
       width: 50px;
       text-align: left;
       height: 100px;
-      padding-left: 5px; }
+      padding-left: 15px; }
     #shopping table .car_img {
       width: 90px;
       height: 100px; }
@@ -547,7 +547,7 @@ input {
       float: left;
       width: 250px;
       height: 30px;
-      border: solid 1px blue; }
+      padding-left: 15px; }
       #shopping .clear_info .clear a {
         padding: 0 10px;
         color: #999999; }
@@ -555,7 +555,6 @@ input {
       float: right;
       min-width: 430px;
       height: 30px;
-      border: solid 1px red;
       color: #999999; }
       #shopping .clear_info .payment i {
         color: red;

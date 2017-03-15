@@ -453,16 +453,17 @@ img {
 
 
 #shopping {
-    width: 900px;min-height:500px;background: pink; margin: 0 auto;padding-top:30px;
+    width: 900px;min-height:200px; margin: 0 auto;padding-top:30px;
     .title{
         display: block; widht: 900px; height: 32px;border: solid 1px red;font-size: 22px; text-align:right;line-height:32px;margin: 0 0 30px 0;
     }
     table{
         width: 900px;border: solid 1px blue;border-collapse: collapse;
-        th{border: solid 1px red; font-size: 10px; color: #000000;}
+        tr{border: solid 1px #666666;}
+        th{ font-size: 10px; color: #000000;}
         .car_title{height:30px;}
 //      .elect {width: 90px; height: 40px;background: blue; text-align:center;}
-        .car_choose{width:50px; text-align:left; height: 100px;padding-left:5px;}
+        .car_choose{width:50px; text-align:left; height: 100px;padding-left:15px;}
         .car_img{width:90px; height:100px;
             img{ height:100%; }
         }
@@ -485,10 +486,10 @@ img {
     }
     .clear_info{width: 900px; height: 30px;line-height: 30px; font-size: 10px;
     margin: 20px 0;
-        .clear {float: left;width: 250px; height: 30px; border: solid 1px blue;
+        .clear {float: left;width: 250px; height: 30px;padding-left: 15px;
             a{padding: 0 10px; color: #999999;}
         }
-        .payment{float: right;min-width: 430px;height: 30px;border: solid 1px red;color: #999999;
+        .payment{float: right;min-width: 430px;height: 30px;color: #999999;
             i{color: red; padding: 0 3px;}
             span{padding:0 3px;}
             strong{color: red; font-size:16px;font-weight: bold;}

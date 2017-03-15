@@ -56,7 +56,7 @@ $(function () {
 			
 			car_count.append(count_p);
 			
-			console.log((parseInt(car_count.find("input").val())+1));
+//			console.log((parseInt(car_count.find("input").val())+1));
 			//添加点击时间  增加选择商品的数量
 			car_count.find("a").eq(1).click(function () {
 				car_count.find("input").val(parseInt(car_count.find("input").val())+1);
@@ -66,7 +66,7 @@ $(function () {
 				if( parseInt(car_count.find("input").val()) > 0 ) {
 					
 					car_count.find("input").val(parseInt(car_count.find("input").val())-1);
-					console.log(car_count.find("input").val());
+//					console.log(car_count.find("input").val());
 				}
 			});
 			

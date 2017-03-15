@@ -40,10 +40,15 @@ $(function () {
 
 
 //获取后台信息库的 商品信息
-	$.get("json/shop.json",function (data) {
+	$.get("php/getGoodsList.php",{"goodsId":},function (num) {
 		//开始创建商品列表
-		for (let i=0;i<data.length; i+=1) {
-			console.log(data[i].img);
+//		console.log(JSON.parse(JSON.stringify(data)));
+
+		var data = eval(num);
+		console.log(data);
+		
+			console.log(data.length);
+		for (let key in data) {
 			let Li = $("<li></li>");
 	//		Li.css({"background":"red"})
 			let goods_box = $("<div>");
@@ -52,7 +57,7 @@ $(function () {
 			let goods_img =$("<div>");
 			goods_img.addClass("goods_img");//添加class名
 			let img = $("<img>");//创建图片 
-			img.attr({"src":data[i].img}); //将获取到的图片地址赋值给创建好的图片
+			img.attr({"src":data[key].goodsImg}); //将获取到的图片地址赋值给创建好的图片
 			goods_img.append(img); //将图片添加到到 存放图片的容器
 			
 			
@@ -65,10 +70,8 @@ $(function () {
 			coll.append(coll_a);
 			//库存数量 创建
 			let coll_span = $("<span>");
-			coll_span.html(data[i].count);
+			coll_span.html(data[key].goodsCount);
 			coll.append(coll_span);
-			
-			
 			goods_box.append(coll);
 			
 			//创建商品信息模块
@@ -79,18 +82,18 @@ $(function () {
 			let name =$("<p>");
 			name.addClass("goods_name");
 			let name_a = $("<a>");
-			name_a.html(data[i].brand);
+			name_a.html(data[key].goodsName);
 			name.append(name_a);
 			message.append(name);
 			//商品的信息
 			let title = $("<p>");
 			title.addClass("goods_title");
-			title.html(data[i].info);
+			title.html(data[key].goodsDesc);
 			message.append(title);
 			//商品的 价格
 			let price = $("<p>");
 			price.addClass("goods_price");
-			price.html("奢侈吧<span>"+data[i].price+"</span>");
+			price.html("奢侈吧<span>"+data[key].goodsPrice+"</span>");
 			message.append(price);
 			
 			//将以上创建都放进 message
@@ -98,6 +101,9 @@ $(function () {
 	
 			Li.append(goods_box);
 			$("#goods_list").append(Li);
+//			Li.on("click",function () {
+//				location.href="goods_message.html"
+//			});
 		}
 		
 		//商品列表添加完成

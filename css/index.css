@@ -57,31 +57,24 @@ img {
 #brand {
   width: 1210px;
   height: 686px;
-  border: solid 1px red;
-  /*//33333*/
   margin: 0 auto; }
 
 #items {
   width: 1210px;
   height: 676px;
-  border: solid 1px greenyellow;
-  /*333*/
   margin: 0 auto;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-bottom: 20px; }
 
 #shop {
   width: 1210px;
   height: 2330px;
-  margin: 0 auto;
-  border: solid 1px green;
-  /*333*/ }
+  margin: 0 auto; }
 
 #pomotion {
   width: 1210px;
   height: 926px;
-  margin: 0 auto;
-  border: solid 1px royalblue;
-  /*333*/ }
+  margin: 0 auto; }
 
 #query {
   width: 1210px;
@@ -324,8 +317,7 @@ img {
 
 #brand .brand_pic {
   width: 1210px;
-  height: 329px;
-  border: solid 1px blue; }
+  height: 329px; }
 
 #brand .brand_pic .pic {
   float: left;
@@ -432,21 +424,20 @@ img {
 
 #items .items_title {
   width: 1210px;
-  height: 114px;
-  background: #1B1C1B;
-  /*33*/ }
+  height: 114px; }
 
 #items .items_content {
   width: 1210px;
-  height: 562px;
+  height: 570px;
   position: relative; }
 
 #items .page {
   width: 3630px;
-  height: 518px;
+  height: 526px;
   position: absolute;
   left: 0px;
-  bottom: 0px; }
+  bottom: 0px;
+  border: solid 1px red; }
 
 #items .page li {
   float: left;
@@ -456,7 +447,6 @@ img {
 #items .items_content .items_list {
   width: 1233px;
   height: 30px;
-  background: #6495ED;
   margin-left: -23px; }
 
 #items .items_content .items_list .enter {
@@ -473,12 +463,12 @@ img {
   margin-left: 23px; }
 
 #items .items_content .items_pic {
-  width: 1210px;
+  width: 1208px;
   height: 518px;
   margin-top: 14px; }
 
 #items .items_content .items_pic #itmes_1 {
-  width: 1210px;
+  width: 1208px;
   height: 518px;
   background: #6495ED; }
 

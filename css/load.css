@@ -91,6 +91,7 @@ input {outline: none;}
 	/*background: blue;*/
 	border: solid 1px #cccccc;
 }
+#user .name{ padding-left: 20px;color: red;font-size: 14px;}
 #user input {float: right;
 	width: 220px;
 	height: 28px;
@@ -102,15 +103,15 @@ input {outline: none;}
 	height:30px;
 	/*background: blueviolet;*/
 	border: solid 1px #cccccc;
-	
 }
+/*#pwd .pwd{ }*/
 #content i{width:32px; height: 30px; line-height: 30px; text-align: center; font-size: 22px;
 color: #cccccc; }
 #pwd input {float: right;width: 220px;
 	height: 28px;
 	border: none;}
 #banner .list .auto {
-	margin: 15px 25px 15px 25px;
+	margin: 30px 25px 15px 25px;
 	width: 260px;
 	height: 30px;
 }
